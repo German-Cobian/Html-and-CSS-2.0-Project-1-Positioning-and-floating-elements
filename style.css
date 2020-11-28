@@ -94,45 +94,6 @@ p {
   margin: 10px 0;
 }
 
-.inflation-title {
-  width: 1000px;
-  margin: 0 100px;
-  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-#title-variant {
-  font-size: 14px;
-}
-
-.inflation-theory {
-  width: 1000px;
-  height: 609px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-end;
-  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
-  background-size: contain;
-}
-
-.box {
-  width: 225px;
-  height: 150px;
-  font-family: nyt-franklin, arial, helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 17px;
-}
-
-#inflation-credit {
-  width: 1000px;
-  margin: 0 100px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #666;
-}
-
 .footnotes {
   color: #888;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
@@ -157,15 +118,15 @@ p {
   align-self: center;
 }
 
+.image {
+  margin-left: 80px;
+  width: 1000px;
+}
+
 #image-03 {
   margin-left: 0;
   width: 580px;
   align-self: center;
-}
-
-.image {
-  margin-left: 80px;
-  width: 1000px;
 }
 
 .size-icon {
@@ -207,6 +168,50 @@ p {
   color: #fff;
 }
 
+/* Image With Overlapped Text */
+
+.inflation-title {
+  width: 1000px;
+  margin: 0 100px;
+  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#title-variant {
+  font-size: 14px;
+}
+
+.inflation-theory {
+  width: 1000px;
+  height: 609px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: contain;
+}
+
+.box {
+  width: 225px;
+  height: 150px;
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+#inflation-credit {
+  width: 1000px;
+  margin: 0 100px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666;
+}
+
+
+/* Footer Section */
+
 .bottom-page {
   width: 1258px;
   display: flex;
@@ -227,6 +232,17 @@ p {
   justify-content: space-between;
   font-size: 14px;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.links-list a {
+  font-size: 12px;
+  line-height: 200%;
+  color: #000;
+  text-decoration: none;
+}
+
+.links-list h4 {
+  margin: 10px 0;
 }
 
 .link-box {
@@ -278,16 +294,7 @@ p {
   color: #666;
 }
 
-.links-list a {
-  font-size: 12px;
-  line-height: 200%;
-  color: #000;
-  text-decoration: none;
-}
-
-.links-list h4 {
-  margin: 10px 0;
-}
+/* Editor's Pick Section */
 
 .editors-pick {
   position: absolute;
@@ -329,6 +336,8 @@ p {
   text-decoration: none;
 }
 
+/* Newsletter Section */
+
 .suggested {
   max-width: 942px;
   grid-area: first;
@@ -348,8 +357,6 @@ p {
   margin: 10px 0;
   width: 471px;
   height: 50px;
-  display: flex;
-  align-items: baseline;
 }
 
 .suggested-title p {
@@ -357,7 +364,6 @@ p {
   margin: 10px 0;
   margin-left: auto;
   height: 50px;
-  display: inline;
 }
 
 .suggested-option {
@@ -424,24 +430,20 @@ p {
   max-width: 313px;
   grid-area: second;
   border-top: 1px solid #000;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .most-popular h4 {
   width: 313px;
   margin: 0;
-  display: flex;
-  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .most-popular p {
   width: 313px;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-top: 1px solid #ccc;
 }
 
@@ -525,6 +527,8 @@ p {
     "third third third second"
     "third third third second";
 }
+
+/* Comment Form Section */
 
 .comment-form {
   margin-top: 20px;
